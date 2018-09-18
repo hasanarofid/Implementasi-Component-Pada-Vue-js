@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Implementasi Component Pada Vue Js</title>
+</head>
+
+<body>
+    <div id="app">
+        <tulisan></tulisan>
+    </div>
+    <div id="app2">
+        <p>SLOT IN ACTION</p>
+        <tulisan2>Ini Tulisan dengan Slot</tulisan2>
+    </div>
+
+    <div id="app3">
+        <p>Components, Slot dan Array</p>
+        <tulisan3></tulisan3>
+    </div>
+
+    <div id="app4">
+        <p>Parsing Data Dengan Props</p>
+        <tulisan4 judul="karya" isi="Props pada component vue js"></tulisan4>
+    </div>
+
+    <div id="app5">
+        <p>IMPLEMENTASI COMPONENT DAN EVENT HANDLER</p>
+        <tulisan5 @applay="validasi"></tulisan5>
+        <b v-if="valid"> Data Valid!</b>
+    </div>
+
+    <script src="https://unpkg.com/vue">
+    </script>
+    <script src="apps.js"></script>
+</body>
+
+</html>
